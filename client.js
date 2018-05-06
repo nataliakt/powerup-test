@@ -1,7 +1,7 @@
 TrelloPowerUp.initialize({
   'card-buttons': function(t, options){
     return [{
-      icon: 'https://cdn.glitch.com/1b42d7fe-bda8-4af8-a6c8-eff0cea9e08a%2Frocket-ship.png?1494946700421',
+      icon: 'https://avatars3.githubusercontent.com/u/9091491?s=40&v=4',
       text: 'Estimate Size',
       callback: function(t){
         return t.popup({
@@ -10,5 +10,14 @@ TrelloPowerUp.initialize({
         });
       }
     }];
-  }
+  },
+  'card-badges': function(t, options) {
+    return t.get('card', 'shared', 'estimate')
+    .then(function(estimate) {
+      return [{
+        icon: 'https://avatars3.githubusercontent.com/u/9091491?s=40&v=4',
+        text: estimate
+      }];  
+    });
+  },
 });
