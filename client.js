@@ -49,7 +49,7 @@ TrelloPowerUp.initialize({
   'show-authorization': function(t, options){
     return t.popup({
       title: 'Authorize 🥑 Account',
-      url: './auth.html',
+      url: 'auth.html',
       height: 140,
     });
   }
