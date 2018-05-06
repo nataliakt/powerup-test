@@ -4,7 +4,7 @@ t.render(function() {
   return t.sizeTo('#content');
 })
 
-var oauthUrl = window.origin + '/3rd-party/authorize.html';
+var oauthUrl = window.origin + '/powerup-test/3rd-party/authorize.html';
 
 var authBtn = document.getElementById('authorize');
 authBtn.addEventListener('click', function() {
